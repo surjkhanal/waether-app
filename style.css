@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height:100vh;
+    background-color: #D8E9A8;
+    padding-top:100px;
+    font-size: 62.5%;
+    
+}
+main{
+    /* height:fit-content; */
+}
+img{
+    width:100%;
+    display:inline-block;
+    border-radius: 15px;
+}
+.img{
+    width:50%
+}
+.container{
+    padding: 1rem;
+    background-color:#3A9679;
+    border-radius: 15px;
+    max-width: 80%;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    display:none;
+}
+.container .details{
+    font-size: 1.2rem;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 50%;
+}
+#detail-city{
+    font-size:3rem;
+    color:#fff;
+    margin-bottom: 10px;
+    font-weight:700;
+    letter-spacing:2px;
+
+}
+#detail-country{
+    font-size:1.5rem;
+}
+#detail-country::before{
+    content:",";
+    margin-left: 10px;
+    margin-right: 0px;
+}
+#detail-time{
+    font-size:1.8rem;
+    color:#d1d7db;
+    margin-bottom: 10px;
+
+}
+#detail-temp span{
+    display: inline-block;
+    text-align:center;
+    font-size:1.8rem;
+    /* width:160px; */
+    /* background-color: #94a7a2; */
+    border-radius: 5px;
+    padding:5px;
+}
+ 
+#detail-temp-current{
+    font-size: 5rem!important;
+    background-color: transparent!important;
+    text-align: center;
+    /* width: 100%; */
+}
+#msg{
+    display: inline-block;
+    font-size:2rem;
+    padding:15px 15px;
+    color: #e2d2d2;
+    text-shadow: 1px 1px red;
+    border-radius: 20px;
+    margin:10px 0;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform: capitalize;
+
+}
+#weather-icon {
+    display: inline-block;
+    background-color: rgba(153, 146, 146, 0.452);
+    border-radius: 15px;
+    padding-top: 3px;
+    margin-left: 5px;    
+
+}
+#weather-icon img{
+    width:75px;
+}
+#blocks {
+    display: flex;
+    gap:25px;
+}
+#blocks .block{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+#blocks .block img{
+    max-width:32px;
+}
+#blocks .block{
+    padding:15px;
+    border-radius: 15px;
+    background-color: #000;
+}
+footer form{
+    background-color:#3A9679;
+    color:#fff;
+    display: flex;
+    padding:1rem;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom:0px;
+}
+#input-block{
+    display: flex;
+    align-items: stretch;
+}
+input#city::placeholder{
+    color:#1E6262;
+}
+input#city{
+    font-size:1rem;
+    padding:0.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    min-width: 500px;
+    background-color: #FABC60;
+    color:#4A3F35;
+    font-weight: bold;
+}
+input#city-submit{
+    display: inline-block;
+    padding:0.2rem 1rem;
+    border: none;
+    background-color: #E16262;
+    color: #E7EED2;
+}
+label{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    letter-spacing:1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        border: 2px solid red;
+        font-size:50%;
+        padding-top: 15px;
+    }
+    #input-block{
+        width:50%;
+    }
+
+    input#city{
+        width:100% !important;
+        min-width: 0;
+    }
+    footer label{
+        font-size: 0.8rem;
+    }
+
+    .container{
+        flex-direction: column;
+        padding:1rem 0.5rem;
+    }
+    .img ,
+    .details{
+        width: 100%!important;
+    }
+    .details #detail-city{
+        font-size:2rem;
+    }
+    .details #detail-country{
+        font-size:1rem;
+    }
+    .details #detail-time{
+        font-size:1rem;
+    }
+    .details  #detail-temp{
+        font-size:0.8rem;
+    }
+    .details #detail-temp #detail-temp-current{
+        font-size:2.5rem!important;
+    }
+    #detail-temp-current ~ span{
+        font-size:1.5rem!important;
+    }
+    .details #weather-icon-img{
+        width: 48px;
+    }
+    #blocks .block img{
+        width:16px;
+    }
+    #blocks .block span{
+        font-size:0.8rem;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+    #input-block{
+        width:40%;
+    }
+
+}

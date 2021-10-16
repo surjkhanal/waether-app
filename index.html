@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="img">
+                <img src="./img/cloud.jpg" alt="">
+            </div>
+            <div class="details">
+                <span id="detail-city">City<span id="detail-country"> </span></span>
+                
+                <span id="detail-time"></span> 
+                <span id="detail-temp">
+                    <span id="detail-temp-current" ></span>
+                    <div id="weather-icon">
+                        <img id="weather-icon-img" src="http://openweathermap.org/img/wn/10d.png">
+                    </div>
+                    <br>Min.
+                    <span id="detail-temp-min" ></span>
+                    Max.
+                    <span id="detail-temp-max" ></span>
+                </span>
+                <span id="msg"></span>
+                <div id="blocks">
+                    <div class="block" >
+                        <img src="https://img.icons8.com/ios-glyphs/50/ffffff/wind.png"/>
+                        <span id="speed">  </span>
+                    </div>
+                    <div class="block" >
+                        <img src="https://img.icons8.com/external-justicon-lineal-justicon/64/ffffff/external-humidity-weather-justicon-lineal-justicon-1.png"/>
+                        <span id="humidity"> </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <form action="">
+
+            <div id="input-block">
+                <input type="text" name="city" id="city" placeholder="select city" value="kolkata">
+                <input type="submit" value="GO" id="city-submit">
+            </div>
+            <div id="toggle">
+                <label for="celcius">celcius </label>
+                <input type="radio" name="temp-unit" id="celcius" value="celcius" checked>
+                <label for="farenheit">farenheit</label>
+                <input type="radio" name="temp-unit" id="farenheit" value="farenheit">
+            </div>
+        </form>
+    </footer>
+</body>
+</html>
