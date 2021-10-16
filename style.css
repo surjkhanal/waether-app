@@ -165,7 +165,6 @@ label{
 
 @media screen and (max-width:1000px) {
     body{
-        border: 2px solid red;
         font-size:50%;
         padding-top: 15px;
     }
