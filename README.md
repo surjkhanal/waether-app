@@ -1,3 +1,3 @@
 # waether-app
 
-https://surjkhanal.github.io/weather-app/
+https://tosudh.github.io/weather-app/
